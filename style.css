@@ -110,7 +110,10 @@ body {
 ========================== */
 .hero {
   background: #ffe6e6;
-  padding: 80px 0;
+  min-height: 80vh; /* Use a relative unit to maintain height on different screen sizes */
+  padding-top: 80px;
+  position: relative; /* Crucial for absolute positioning of the image and the base */
+  overflow: hidden; /* Prevents overflow issues */
 }
 
 .hero-content {
@@ -304,7 +307,7 @@ body {
     margin-top: 30px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: bottom;
   }
 
   .hero-image img {
@@ -399,5 +402,25 @@ body {
     text-align: center;
   }
 }
+
+.features-intro {
+  text-align: center;   /* center the text */
+  margin-bottom: 5px;  /* spacing below heading */
+  margin-top: 70px;     /* push it a little lower */
+}
+
+.features-intro p {
+  display: inline-block;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 6px 15px;
+  border-radius: 0px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+
+
 
 
